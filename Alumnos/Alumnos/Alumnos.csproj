@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50102C00-D2FB-4F7E-9BB9-34F2819124C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alumnos</RootNamespace>
+    <AssemblyName>Alumnos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Alejandro\Desktop\xddd\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>16FF8B9CF79ECB60A1A36281A9D52B755925D018</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Alumnos_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ateneoo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ateneoo.Designer.cs">
+      <DependentUpon>Ateneoo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boletas1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boletas1.Designer.cs">
+      <DependentUpon>Boletas1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="boletasateneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boletasateneo.Designer.cs">
+      <DependentUpon>boletasateneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Credenciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credenciales.Designer.cs">
+      <DependentUpon>Credenciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="credencialesateneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="credencialesateneo.Designer.cs">
+      <DependentUpon>credencialesateneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="credencialesateneos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>credencialesateneos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inscriateneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inscriateneo.Designer.cs">
+      <DependentUpon>Inscriateneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscriLiceo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscriLiceo.Designer.cs">
+      <DependentUpon>InscriLiceo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liceo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liceo.Designer.cs">
+      <DependentUpon>Liceo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listaevaluacionateneo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listaevaluacionateneo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas.Designer.cs">
+      <DependentUpon>Listas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listasateneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listasateneo.Designer.cs">
+      <DependentUpon>listasateneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="numeroscuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="numeroscuenta.Designer.cs">
+      <DependentUpon>numeroscuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="numeroscuentaateneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="numeroscuentaateneo.Designer.cs">
+      <DependentUpon>numeroscuentaateneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recibos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recibos.Designer.cs">
+      <DependentUpon>Recibos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recibosateneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recibosateneo.Designer.cs">
+      <DependentUpon>recibosateneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recibosateneos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>recibosateneos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TareaaaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TareaaaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TareaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TareaDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ateneoo.resx">
+      <DependentUpon>Ateneoo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boletas1.resx">
+      <DependentUpon>Boletas1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boletasateneo.resx">
+      <DependentUpon>boletasateneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credenciales.resx">
+      <DependentUpon>Credenciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="credencialesateneo.resx">
+      <DependentUpon>credencialesateneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="credencialesateneos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>credencialesateneos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscriateneo.resx">
+      <DependentUpon>Inscriateneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscriliceo.resx">
+      <DependentUpon>InscriLiceo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liceo.resx">
+      <DependentUpon>Liceo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaevaluacionateneo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listaevaluacionateneo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas.resx">
+      <DependentUpon>Listas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listasateneo.resx">
+      <DependentUpon>listasateneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="numeroscuenta.resx">
+      <DependentUpon>numeroscuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="numeroscuentaateneo.resx">
+      <DependentUpon>numeroscuentaateneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recibos.resx">
+      <DependentUpon>Recibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recibosateneo.resx">
+      <DependentUpon>recibosateneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recibosateneos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>recibosateneos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Alumnos_ClaveTemporal.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TareaaaDataSet.xsc">
+      <DependentUpon>TareaaaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TareaaaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TareaaaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TareaaaDataSet.xss">
+      <DependentUpon>TareaaaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TareaDataSet.xsc">
+      <DependentUpon>TareaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TareaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TareaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TareaDataSet.xss">
+      <DependentUpon>TareaDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\2356733_V1-V35005018.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\10996479_991537314189634_1773997798703319903_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\uni_colima.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ateneo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\liceodeltanuevo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\liceodeltanuevo - copia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
